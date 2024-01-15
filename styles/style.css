@@ -64,7 +64,7 @@ nav {
     top: 0;
     background-color: transparent;
     border-bottom: 1px solid black;
-    z-index: 2;
+    z-index: 3;
 }
 
 
@@ -713,7 +713,6 @@ h4 {
     background-size: cover;
     background-position: 50%;
     padding: 0 0 0 10rem;
-   
     position: relative;
 }
 
