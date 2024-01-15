@@ -27,10 +27,10 @@
                 </li>
                 <div class="nav-items flex">
                     <li>
-                        <a class="txt-white" href="">Home</a>
+                        <a class="txt-white" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="txt-white" href="">Reviews</a>
+                        <a class="txt-white" href="#reviews">Reviews</a>
                     </li>
                     <li id="service-desktop" style="cursor: pointer;" class="txt-white">
                         Services
@@ -42,7 +42,7 @@
                         <a class="txt-white" href="">Contact</a>
                     </li>
                     <li>
-                        <a class="txt-white" href="">F.A.Q</a>
+                        <a class="txt-white" href="#faq">F.A.Q</a>
                     </li>
                 </div>
                 <i class="fa-solid fa-bars nav-icon txt-white"></i>
@@ -52,7 +52,7 @@
         <!-- nav popup  -->
         <div class="services-popup display">
             <i class="fa-solid fa-x" id="service-popup-close"></i>
-            <a href="">Blackmail/Extortion</a>
+            <a href="blackmail.html">Blackmail/Extortion</a>
             <a href="">Crypto Recovery</a>
             <a href="">Account Unlock</a>
             <a href="">Romance Scam Recovery</a>
@@ -65,26 +65,26 @@
             <div class="mobile-x flex">
                 <i class="fa-solid fa-x" id="close-mobile"></i>
             </div>
-            <a href="" class="mobile-link">Home</a>
+            <a href="index.html" class="mobile-link">Home</a>
             <p class="mobile-link" style="cursor: pointer;" id="mobile-service-icon" >Services <i class="fa-solid fa-chevron-down" style="font-size: 0.5rem;"></i></p>
             <a href="" class="mobile-link">About</a>
             <a href="" class="mobile-link">Contact Us</a>
-            <a href="" class="mobile-link">Review</a>
-            <a href="" class="mobile-link">F.A.Q</a>
+            <a href="#reviews" class="mobile-link">Review</a>
+            <a href="#faq" class="mobile-link">F.A.Q</a>
 
             <div class="mobile-socials">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/reclaim_assets?igsh=a2ZneThiaTcydG9z&utm_source=qr" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram txt-white"></i>
                 </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                <a href="https://wa.link/5a3oll" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-whatsapp txt-white"></i></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                <a href="https://t.me/reclaim_assets" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-telegram txt-white"></i></a>
             </div>
 
             <div class="service-mobile-popup display">
                 <i class="fa-solid fa-x service-popup-close"></i>
-                <a href="">Blackmail/Extortion</a>
+                <a href="blackmail.html">Blackmail/Extortion</a>
                 <a href="">Crypto Recovery</a>
                 <a href="">Account Unlock</a>
                 <a href="">Romance Scam Recovery</a>
@@ -309,23 +309,35 @@
                 <img src="assets/Women_cybersecurity_750x500.jpg" alt="">
                 <div class="value-txt">
                     <div class="value-titles flex">
-                        <button class="excellence active">
+                        <button class="excellence values-btn active">
                             EXCELLENCE
                         </button>
-                        <button class="integrity">
+                        <button class="integrity values-btn">
                             INTEGRITY
                         </button>
-                        <button class="team-work">
+                        <button class="team-work values-btn">
                             TEAM WORK
                         </button>
                     </div>
 
                     <div class="value-content">
-                        <h5>Continuous Improvement</h5>
-                        <p>Through continuous refinement, we work diligently and tirelessly to surpass your
-                            expectations.
-                            Our unwavering commitment ensures that we won't rest until we've achieved excellence
+                        <h5 class="values-t">Continuous Improvement</h5>
+                        <h5 class="values-t display">Reliable Integrity</h5>
+                        <h5 class="values-t display">Ressilient Teamwork</h5>
+
+                        <p class="values-p">Through continuous refinement, we work diligently and tirelessly to surpass your
+                            expectations.Our unwavering commitment ensures that we won't rest until we've achieved excellence
                             and completed the job to your utmost satisfaction.
+                        </p>
+                        <p class="values-p display">Unwavering Ethical Commitment: We uphold the highest standards of 
+                            trustworthiness and ethical conduct. Our reliable integrity is the cornerstone of our service, 
+                            ensuring your complete confidence in our work. We are dedicated to maintaining your trust, 
+                            always, because your peace of mind matters.
+                        </p>
+                        <p class="values-p display">Collaborative Determination: Our resilient teamwork thrives on 
+                            collaboration and determination. We unite as a dedicated team, facing challenges 
+                            head-on and delivering results together. With unwavering determination, 
+                            we work seamlessly to achieve your goals, every step of the way.
                         </p>
                     </div>
 
@@ -354,7 +366,7 @@
         </div>
 
         <!-- TESTIMONIES -->
-        <div class="testimonies-container">
+        <div class="testimonies-container" id="reviews">
             <p class="section-p">TOP TESTIMONIES</p>
             <h2>Reviews</h2>
             <div class="testimony-carousel">
@@ -469,7 +481,7 @@
 
                     <div class="testimony ">
                         <div class="testimony-flex flex">
-                            <img src="assets/testimony-5.jpeg" alt="">
+                            <img src="assets/testimony-5.jpg" alt="">
                             <h5>Benjamin Carter</h5>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
@@ -499,7 +511,7 @@
         </div>
 
         <!-- FAQ SECTION -->
-        <div class="faq-container">
+        <div class="faq-container" id="faq">
             <p class="section-p">FREQUENTLY ASKED QUETIONS</p>
             <h2>F.A.Q</h2>
 
@@ -507,7 +519,7 @@
                 <div class="faq">
                     <div class="faq-title flex">
                         <h4>Refund Policy</h4>
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-plus faq-plus"></i>
                     </div>
 
                     <div class="faq-answer display">
@@ -528,7 +540,7 @@
                 <div class="faq">
                     <div class="faq-title flex">
                         <h4>How can i report a scam to Reclaim Asset Charge Back?</h4>
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-plus faq-plus"></i>
                     </div>
 
                     <div class="faq-answer display">
@@ -556,7 +568,7 @@
                 <div class="faq">
                     <div class="faq-title flex">
                         <h4>What services does Reclaim Asset Charge back offer to scam victims?</h4>
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-plus faq-plus"></i>
                     </div>
 
                     <div class="faq-answer display">
@@ -571,7 +583,7 @@
                 <div class="faq">
                     <div class="faq-title flex">
                         <h4>Can Reclaim Asset Charge Back Assist with Online Investment Scam Victims??</h4>
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-plus faq-plus"></i>
                     </div>
 
                     <div class="faq-answer display">
@@ -610,18 +622,18 @@
                 <h4>Contact</h4>
                 <p class="info">Email: info@reclaimassetchargeback.com</p>
                 <p class="support">Support: support@reclaimassetchargeback.com</p>
-                <p>Tel: +1 256 365 8640</p>
+                <p style="color: black;">Tel: +1 256 365 8640</p>
             </div>
 
             <div class="follow-us">
                 <h4>Follow Us</h4>
                 <div class="social-icons flex">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/reclaim_assets?igsh=a2ZneThiaTcydG9z&utm_source=qr" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    <a href="https://wa.link/5a3oll" target="_blank" rel="noopener noreferrer"><i
                             class="fa-brands fa-whatsapp"></i></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    <a href="https://t.me/reclaim_assets" target="_blank" rel="noopener noreferrer"><i
                             class="fa-brands fa-telegram"></i></a>
                 </div>
             </div>
@@ -641,7 +653,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
