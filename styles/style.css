@@ -7,6 +7,59 @@ body {
 }
 
 /* Global styles */
+.loading {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: black;
+    z-index: 5;
+    opacity: .5;
+}
+
+.rotating {
+    width: 7.5rem; 
+    height: 7.5rem;
+    align-items: center;
+    justify-content: center;
+    border: 0.5rem solid #FFFFFF;
+    border-top: 0.5rem solid #000000; /* Blue color for the top border */
+    border-radius: 50%; /* Makes it circular */
+    animation: rotate 1s linear infinite; /* Rotates infinitely */
+}
+ 
+
+.loading img {
+    width: 5rem;
+    height: 5rem;
+    height: auto;
+    display: block;
+}
+
+.beeping-img {
+    display: inline-block;
+    animation: beep 1s infinite; /* Adjust the timing as needed */
+}
+
+@keyframes beep {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2); /* Scales the image up */
+        opacity: 0.7; /* Optionally, change the opacity */
+    }
+}
+
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg); /* Complete a full circle */
+    }
+  }
 
 button {
     font-family: 'Roboto', sans-serif;
@@ -101,7 +154,7 @@ nav ul {
     position: absolute;
     top: 4rem;
     right: 4rem;
-    z-index: 2;
+    z-index: 3;
 }
 
 .services-popup i, .service-mobile-popup i {
@@ -709,11 +762,38 @@ h4 {
 
 .top-container-services {
     height: 36.875rem;
-    background-image: url("../assets/blackmail-img.avif"); 
     background-size: cover;
     background-position: 50%;
     padding: 0 0 0 10rem;
     position: relative;
+}
+
+.blackmail {
+    background-image: url("../assets/blackmail-img.avif"); 
+}
+
+.bitcoin {
+    background-image: url(../assets/bitcoin-img.jpeg);
+}
+
+.account-unlock {
+    background-image: url("../assets/account-unlock-img.webp");
+}
+
+.romance {
+    background-image: url("../assets/romance-img.jpeg");
+}
+
+.social {
+    background-image: url("../assets/social-img.avif");
+}
+
+.phone {
+    background-image: url("../assets/phone-img.jpeg");
+}
+
+.about {
+    background-image: url("../assets/phone-img.jpeg");
 }
 
 .top-container-services::before {
@@ -751,6 +831,11 @@ h4 {
     background-color: #E5E8E8;
 }
 
+.about-service-flex {
+    align-items: flex-start;
+    gap: 2rem;
+}
+
 .about-service-txt {
     flex-direction: column;
     gap: 3rem;
@@ -765,6 +850,27 @@ h4 {
     border-radius: 1rem;
     width: 50%;
     height: auto;
+}
+
+.about-reputation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+}
+
+.reputation {
+    justify-content: center;
+}
+
+.reputation p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.reputation span {
+    font-size: 1.2rem;
+    color: rgb(41 208 144);
 }
 
 /* key services  */
@@ -865,13 +971,19 @@ h4 {
         font-weight: 700;
     }
 
-    .about-services {
+    .about-services, .about-service-flex {
         flex-direction: column;
     }
+
 
     .about-services img {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .about-reputation {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 
     /* key services  */
@@ -956,6 +1068,9 @@ h4 {
 
     /* ////////////////////////////// SERVICES AND ALL SUBSECTION /////////////////////////////// */
 
+    .about-reputation {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     /* key services  */
 

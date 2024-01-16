@@ -42,3 +42,14 @@ mobileServiceIcon.addEventListener("click", ()=>{
      serviceMobilePopup.classList.add("display");
  });
 
+
+
+//  loading Animation 
+
+ const loadingDiv = document.querySelector(".loading");
+    
+ window.addEventListener('load', function() {
+    if (loadingDiv) {
+        loadingDiv.style.display = 'none';
+    }
+});
